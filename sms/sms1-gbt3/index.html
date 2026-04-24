@@ -37,6 +37,16 @@
   <!-- Page styles -->
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9YRC25SQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LQ9YRC25SQ');
+</script>
 </head>
 
 <body>
@@ -362,6 +372,16 @@
   <script>
     window.page_events = [{ type: 'page_view', data: {}, next: [] }];
   </script>
+
+      <script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="clickbank.net"]');
+  if (link) {
+    navigator.sendBeacon('https://www.google-analytics.com/g/collect?' +
+      'v=2&tid=G-LQ9YRC25SQ&en=cta_click&ep.event_category=SMS&ep.event_label=gutboost_vsl');
+  }
+});
+</script>
 
 </body>
 </html>
